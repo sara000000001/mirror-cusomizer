@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web customizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="01-assets/css/style.css" type="text/css" rel="stylesheet" />
+    <script src="01-assets/js/fabric.min.js"></script>
+
+</head>
+
+<body onload="showStuff1()">
+    <div id="header">
+        <h1>mirrors designs</h1>
+
+    </div>
+
+    <div id="header2">
+        <h1>Mirror customizer</h1>
+
+        <h2>Mirror Shapes : 2D frames closed</h2>
+        <hr>
+    </div>
+
+    <div id="container">
+
+
+        <div id="midbody">
+            <div id="upperCanvas">
+                <input id="file-input" type="file" accept="image/*" />
+                <button id="start">Start Drawing</button>
+                <button id="finish">Finish Drawing</button>
+                <button id="clear">Clear Drawing</button>
+                <button id="edit">Toggle editing polygon</button>
+                <button id="editImage">Edit Image</button>
+                <button id="finshEditImage">Finish Image</button>
+                <img id="preview-image" src="#" />
+                <img src="upload image.png" id="my-image">
+            </div>
+            <div id="canvasBlock">
+                <canvas id="webgl"></canvas>
+                <canvas id="canvas"></canvas>
+              
+            </div>
+            <div id="bottom">
+                <div id="bottomLeft">
+                    <button class="botmLeft"><i class="fa-solid fa-ruler"></i></button>
+                    <button class="botmLeft"><i class="fa-regular fa-square"></i></button>
+
+                    <button class="botmLeft"><i class="fa-solid fa-rotate-left"></i></button>
+                    <button class="botmLeft"><i class="fa-solid fa-rotate-left fa-flip-horizontal"></i></button>
+                </div>
+                <div id="price">
+                    <h3 id="PriceTag"><b>8,350</b> <sub>EGP</sub></h3>
+
+                    <button id="nextbtn" type="button" class="btn btn-primary"><b>3D Scene</b> <i
+                            class="fa-solid fa-arrow-left fa-flip-horizontal"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="parametersNames">
+            <div class="btnContainer">
+                <button id="tab-1"><i class="fa-regular fa-square"></i></button>
+                <button id="tab-2"><i class="fa-solid fa-bolt"></i></button>
+                <button id="tab-3"><i class="fa-regular fa-star"></i></button>
+                <button id="tab-4"><i class="fa-brands fa-codepen"></i></button>
+            </div>
+        </div>
+
+
+        <div id="tabElemt">
+
+            <h2>Parameter Contents</h2>
+
+
+            <!-- <button class="framesBtn" >Frames <i class="fa-solid fa-right-to-bracket"></i> </button> -->
+            <div class="tabContent" id="tab_list_01">
+                <h3>Frames</h3>
+
+                <img src="01-assets//images/fr-blk-wd.png" id = "frBl" width=140px height="140px">
+                <a href="#">Black frame</a>
+                <img src="01-assets/images/fr-wht-wd.png" id = "frWh" width=140px height="140px">
+                <a href="#">White frame</a>
+                <img src="01-assets/images/fr-gd-wd.png" id = "frGd" width=140px height="140px">
+                <a href="#">Gold frame</a>
+                <img src="01-assets/images/fr-sv-wd.png" id = "frSv" width=140px height="140px">
+                <a href="#">Silver frame</a>
+            </div>
+
+
+            <!--<button class="mirrorBtn">Mirror<i class="fa-solid fa-right-to-bracket"></i></button> -->
+            <div class="tabContent" id="tab_list_02">
+                <h3>mirrors</h3>
+
+                <img src="01-assets/images/mr-blue.png" width=140px height="140px">
+                <a href="#">Blue mirror</a>
+                <img src="01-assets/images/mr-pink.png" width=140px height="140px">
+                <a href="#">Pink mirror</a>
+                <img src="01-assets/images/mr-sv.png" width=140px height="140px">
+                <a href="#">Silver mirror</a>
+
+            </div>
+
+
+            <!--<button class="profileBtn">Profiles<i class="fa-solid fa-right-to-bracket"></i></button>-->
+            <div class="tabContent" id="tab_list_03">
+                <h3>profiles</h3>
+
+                <img src="01-assets/images/profile_1.png" width=140px height="140px">
+                <a href="#">profile 1</a>
+                <img src="01-assets/images/profile_2.png" width=140px height="140px">
+                <a href="#">profile 2</a>
+                <img src="01-assets/images/profile_3.png" width=140px height="140px">
+                <a href="#">profile 3</a>
+                <img src="01-assets/images/profile_4.png" width=140px height="140px">
+                <a href="#">profile 4</a>
+                <img src="01-assets/images/profile_5.png" width=140px height="140px">
+                <a href="#">profile 5</a>
+                <img src="01-assets/images/profile_6.png" width=140px height="140px">
+                <a href="#">profile 6</a>
+
+            </div>
+
+            <!--<button class="materialBtn">Materials<i class="fa-solid fa-right-to-bracket"></i></button>-->
+            <div class="tabContent" id="tab_list_04">
+                <h3>materials</h3>
+
+                <img src="01-assets/images/wood1.png" width=140px height="140px">
+                <a href="#">material 1</a>
+                <img src="01-assets/images/wood2.png" width=140px height="140px">
+                <a href="#">material 2</a>
+                <img src="01-assets/images/wood3.png" width=140px height="140px">
+                <a href="#">material 3</a>
+
+
+            </div>
+        </div>
+
+        <hr>
+        <script src="01-assets/js/showStuff.js"></script>
+        <script src="01-assets/js/polygondraw.js"></script>
+        <script type="module" src="01-assets/js/scripthreejs.js"></script>
+     
+        
+
+</body>
+
+</html>
