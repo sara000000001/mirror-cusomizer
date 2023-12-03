@@ -19,7 +19,26 @@ function changeTo3jsCanvas() {
   drawShape()
   console.log(points);
 }
+/*var material = new THREE.MeshLambertMaterial({ color: "red" });
+var materialarr = {
+  "frBl": new THREE.MeshLambertMaterial({ color: "grey" }),
+  "frWh": new THREE.MeshLambertMaterial({ color: "white" }),
+  "frGd": new THREE.MeshLambertMaterial({ color: "yellow" }),
+  "frSv": new THREE.MeshLambertMaterial({ color: "silver" })
+};
 
+
+document.getElementById("tab_list_01").addEventListener("click", function (e) {
+  let mat = e.target.id;
+  console.log(mat);
+  scene.remove(mesh);
+  //material = Object.keys(materialarr);
+  //material = materialarr.frBl;
+  material = Object.keys(materialarr);
+  console.log(material);
+  mesh = new THREE.Mesh(geometry, material);
+  scene.add(mesh);
+});*/
 
 // Canvas
 const canvas = document.querySelector('#webgl');
